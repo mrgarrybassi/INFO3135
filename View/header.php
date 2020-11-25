@@ -1,34 +1,16 @@
-<!Doctype HTML>
+<!DOCTYPE html>
 <html>
-	<header>
-		<title>XYZ Traffic Enforcement</title>
-	
-		<?php
-        
-        $link = $_SERVER['REQUEST_URI'];
-    
-        
-        $pieces = explode("/", $link);
-    
-        
-        echo "<table><tr>";
-        for($i = 0; $i < count($pieces); $i++)
-        {
-            if($pieces[$i] != "")
-            {
-                echo '<td><a class="navi" href="';
-            
-                for($s = 0; $s <= $i; $s++)
-                {
-                    if($pieces[$s] != "")
-                    echo "/" . $pieces[$s]; 
-                }
-            
-                echo '">' . '  /  ' . $pieces[$i] . '</a></td>';
-            }
-         }
-         echo "</tr></table>";
-    
-        ?>
-  
-     </header>
+<head>
+    <title>City of XYZ - Traffic Ticketing System</title>   
+    <link rel="stylesheet" type="text/css" href="/TrafficTicketingSystem/main.css">
+    <div class="menu">
+      <ul>
+        <li><a href="/TrafficTicketingSystem/SearchNotice/">Pay a Notice</a></li>
+        <li><a href="/TrafficTicketingSystem/ContactUs/">Contact Us</a></li>
+        <li><a href="/TrafficTicketingSystem/StaffLogin/">Staff Login</a></li>
+      </ul>
+    </div>
+<h1><a href = "/TrafficTicketingSystem/">City of XYZ</a></h1>
+    <h2>Traffic Ticketing System</h2>
+    <img class = "banner" src = "/TrafficTicketingSystem/images/banner.jpg">
+</head>
